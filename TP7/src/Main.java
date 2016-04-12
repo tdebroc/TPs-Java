@@ -55,11 +55,11 @@ public class Main {
 		
 		/// Instance d'Arbre Binaire stockant des phrases:
 		
-		ArbreBinaireGenerique<String> nodeMot2 = new ArbreBinaireGenerique("je", null, null);
-		ArbreBinaireGenerique<String> nodeMot3 = new ArbreBinaireGenerique("m'appelle", null, null);
-		ArbreBinaireGenerique<String> nodeMot1 = new ArbreBinaireGenerique("Bonjour", nodeMot2, nodeMot3);
-		ArbreBinaireGenerique<String> nodeMot4 = new ArbreBinaireGenerique("Paul", null, null);
-		ArbreBinaireGenerique<String> nodeMot5 = new ArbreBinaireGenerique("de THOISY", null, null);
+		ArbreBinaireGenerique<String> nodeMot2 = new ArbreBinaireGenerique<>("je", null, null);
+		ArbreBinaireGenerique<String> nodeMot3 = new ArbreBinaireGenerique<>("m'appelle", null, null);
+		ArbreBinaireGenerique<String> nodeMot1 = new ArbreBinaireGenerique<>("Bonjour", nodeMot2, nodeMot3);
+		ArbreBinaireGenerique<String> nodeMot4 = new ArbreBinaireGenerique<>("Paul", null, null);
+		ArbreBinaireGenerique<String> nodeMot5 = new ArbreBinaireGenerique<>("de THOISY", null, null);
 		nodeMot2.setFilsG(nodeMot4);
 		nodeMot2.setFilsD(nodeMot5);
 				
@@ -74,11 +74,11 @@ public class Main {
 		
 		/// Instance d'Arbre Binaire stockant des entiers:
 		
-		ArbreBinaireGenerique<Integer> node2 = new ArbreBinaireGenerique(2, null, null);
-		ArbreBinaireGenerique<Integer> node3 = new ArbreBinaireGenerique(3, null, null);
-		ArbreBinaireGenerique<Integer> node1 = new ArbreBinaireGenerique(1, node2, node3);
-		ArbreBinaireGenerique<Integer> node4 = new ArbreBinaireGenerique(4, null, null);
-		ArbreBinaireGenerique<Integer> node5 = new ArbreBinaireGenerique(5, null, null);
+		ArbreBinaireGenerique<Integer> node2 = new ArbreBinaireGenerique<>(2, null, null);
+		ArbreBinaireGenerique<Integer> node3 = new ArbreBinaireGenerique<>(3, null, null);
+		ArbreBinaireGenerique<Integer> node1 = new ArbreBinaireGenerique<>(1, node2, node3);
+		ArbreBinaireGenerique<Integer> node4 = new ArbreBinaireGenerique<>(4, null, null);
+		ArbreBinaireGenerique<Integer> node5 = new ArbreBinaireGenerique<>(5, null, null);
 		node2.setFilsG(node4);
 		node2.setFilsD(node5);
 		

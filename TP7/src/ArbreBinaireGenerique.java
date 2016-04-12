@@ -84,11 +84,11 @@ public class ArbreBinaireGenerique<T> implements Comparable<T> {
 	}
 	
 	// Affichage en Profondeur: Méthode 2 (Avec utilisation d'une pile)
-		public static void DFS(ArbreBinaireGenerique a) {
-			Stack<ArbreBinaireGenerique> pile = new Stack<ArbreBinaireGenerique>(); 
+		public static<T> void DFS(ArbreBinaireGenerique<T> a) {
+			Stack<ArbreBinaireGenerique<T>> pile = new Stack<>(); 
 			pile.push(a);
 			while (!pile.isEmpty()) {
-				ArbreBinaireGenerique b = pile.pop();
+				ArbreBinaireGenerique<T> b = pile.pop();
 				System.out.println(b.getValue());
 				if (b.filsD != null) {
 					pile.push(b.filsD);
@@ -101,11 +101,11 @@ public class ArbreBinaireGenerique<T> implements Comparable<T> {
 		}
 		
 		// Affichage en Largeur :
-		public static void BFS(ArbreBinaireGenerique a) {
-			LinkedList<ArbreBinaireGenerique> queue = new LinkedList<ArbreBinaireGenerique>();
+		public static<T> void BFS(ArbreBinaireGenerique<T> a) {
+			LinkedList<ArbreBinaireGenerique<T>> queue = new LinkedList<>();
 			queue.add(a);
 			while(queue.peek() != null) {
-				ArbreBinaireGenerique b = queue.remove();
+				ArbreBinaireGenerique<T> b = queue.remove();
 			    System.out.println(b.getValue());
 			    if (b.getFilsG() != null) {
 			    	queue.add(b.getFilsG());
