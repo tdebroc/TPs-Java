@@ -118,6 +118,16 @@ public class ArbreBinaire {
 		}
 	}
 
+	/**
+	 * Des que vous appelez depthFirstSearch(), il faut reinitiliser la hashmap.
+	 * 
+	 * depthFirstSearch(ArbreBinaire a) doit etre changé en depthFirstSearch(HashMap map)
+	 * et appelé a.filsG.(map)
+	 * 
+	 * Il y a donc 2 methodes depthFirstSearch, une sans paramètre et l'autre avec hashmap en paramètres.
+	 * 
+	 */
+
 	public void depthFirstSearch(ArbreBinaire a) {
 		System.out.println(a.value);
 		marquer(a, a.key);
